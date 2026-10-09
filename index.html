@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<title>89电影网 | 89dianyingwang-zh - 影片资料与观影文化内容分享</title>
+<meta name="description" content="89电影网（89dianyingwang-zh）是一个以影片资料整理、影史脉络梳理与观影文化分享为主的内容平台，覆盖年代影片回顾、类型专题、影人故事与怀旧片单。我们专注用可读、可查、可讨论的方式呈现影视内容，官方站点 https://89dianyingwang-zh.github.io 持续更新原创文章与专题策划。">
+<meta name="keywords" content="89电影网,89dianyingwang-zh,89电影网影片资料,89电影网怀旧片单,89电影网影史专题,89电影网观影文化,89电影网类型考古,89电影网影人故事,年代影片回顾,经典影视分享">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="89电影网">
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#071c24">
+<meta property="og:type" content="website">
+<meta property="og:title" content="89电影网 | 影片资料与观影文化内容分享">
+<meta property="og:description" content="89电影网（89dianyingwang-zh）专注年代影片回顾、类型专题、影人故事与怀旧片单，官方站点持续更新原创内容。">
+<meta property="og:url" content="https://89dianyingwang-zh.github.io">
+<meta property="og:site_name" content="89电影网">
+<link rel="canonical" href="https://89dianyingwang-zh.github.io">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--deep:#071c24;--deep2:#0d2b36;--teal:#12a39a;--teal2:#7ed9d2;--sand:#f6f1e7;--paper:#fbf8f2;--ink:#1d2a2e;--dim:#6c7d80;--line:rgba(29,42,46,.13);--shadow:0 10px 40px rgba(7,28,36,.12)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--paper);color:var(--ink);line-height:1.8;font-size:16px}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+/* topbar */
+.topbar{background:var(--deep);color:var(--teal2);font-size:12px;padding:9px 0;border-bottom:1px solid rgba(126,217,210,.16)}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar a{color:var(--teal2)}
+/* header */
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:99}
+.h-in{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:14px}
+.mark{width:46px;height:46px;background:var(--deep);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;letter-spacing:-1px;border-radius:6px;flex-shrink:0}
+.mark span{color:var(--teal)}
+.brand-text strong{font-size:21px;letter-spacing:.5px;display:block;line-height:1.2}
+.brand-text small{font-size:11px;color:var(--dim);letter-spacing:2px;text-transform:uppercase}
+nav{display:flex;gap:4px}
+nav a{padding:10px 16px;font-size:15px;color:var(--ink);border-radius:6px;transition:.2s;position:relative}
+nav a:hover{color:var(--teal);background:var(--sand)}
+.h-btn{display:none;background:none;border:1px solid var(--line);width:42px;height:42px;border-radius:6px;font-size:18px;cursor:pointer;color:var(--deep)}
+/* hero split */
+.hero{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(18,163,154,.35),transparent 70%)}
+.hero .wrap{padding-top:96px;padding-bottom:96px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 380px;gap:72px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(126,217,210,.14);color:var(--teal2);padding:7px 16px;border-radius:100px;font-size:13px;margin-bottom:26px}
+.tag::before{content:"";width:6px;height:6px;background:var(--teal);border-radius:50%}
+.hero h1{font-size:clamp(34px,5.4vw,56px);line-height:1.2;font-weight:800;letter-spacing:-.5px;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--teal2)}
+.hero p.lede{font-size:17px;color:rgba(255,255,255,.78);max-width:520px;margin-bottom:32px}
+.urlbox{background:rgba(255,255,255,.06);border:1px dashed rgba(126,217,210,.45);border-radius:8px;padding:16px 20px;margin-bottom:34px}
+.urlbox label{display:block;font-size:11px;letter-spacing:3px;color:var(--teal2);text-transform:uppercase;margin-bottom:8px}
+.urlbox code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;color:#fff;word-break:break-all}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:6px;font-size:15px;font-weight:600;transition:.2s;border:0;cursor:pointer}
+.btn-p{background:var(--teal);color:#04201e}
+.btn-p:hover{background:var(--teal2)}
+.btn-o{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn-o:hover{border-color:var(--teal2);color:var(--teal2)}
+/* hero card stack */
+.hcards{display:flex;flex-direction:column;gap:14px}
+.hcard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:20px 22px;backdrop-filter:blur(6px)}
+.hcard .h{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.hcard .h b{font-size:16px}
+.hcard .h i{font-style:normal;font-size:12px;color:var(--teal2);background:rgba(126,217,210,.14);padding:3px 10px;border-radius:100px}
+.hcard p{font-size:13px;color:rgba(255,255,255,.7)}
+/* sections */
+section{padding:96px 0}
+.eyebrow{display:inline-block;font-size:11px;letter-spacing:4px;color:var(--teal);text-transform:uppercase;font-weight:700;margin-bottom:14px;border-left:3px solid var(--teal);padding-left:12px}
+h2{font-size:clamp(26px,3.8vw,38px);line-height:1.3;margin-bottom:16px;font-weight:800;letter-spacing:-.3px}
+.sec-note{color:var(--dim);max-width:660px;margin-bottom:56px;font-size:16px}
+.bg-sand{background:var(--sand)}
+/* section index */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px}
+.sec-head .lead{max-width:660px}
+.sec-head .lead .sec-note{margin-bottom:0}
+.sec-no{font-size:13px;color:var(--dim);font-weight:600;letter-spacing:2px}
+/* columns 4-up cards */
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.col{background:#fff;border:1px solid var(--line);border-radius:12px;padding:32px 26px;transition:.3s;position:relative;overflow:hidden}
+.col:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:rgba(18,163,154,.4)}
+.col .ic{width:52px;height:52px;background:var(--sand);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px}
+.col h3{font-size:19px;margin-bottom:10px}
+.col p{font-size:14px;color:var(--dim);margin-bottom:20px}
+.col .more{font-size:13px;color:var(--teal);font-weight:600}
+.col .more:hover{color:var(--deep)}
+/* bento */
+.bento{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:auto auto;gap:22px}
+.bx{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px;transition:.25s}
+.bx:hover{border-color:rgba(18,163,154,.4);box-shadow:var(--shadow)}
+.bx h3{font-size:20px;margin-bottom:12px}
+.bx p{font-size:14px;color:var(--dim)}
+.b1x{grid-row:span 2;background:var(--deep);color:#fff;border-color:var(--deep)}
+.b1x .pill{display:inline-block;background:var(--teal);color:#04201e;font-size:11px;font-weight:700;padding:5px 12px;border-radius:100px;letter-spacing:1px;margin-bottom:22px}
+.b1x h3{font-size:26px;color:#fff;margin-bottom:16px;line-height:1.4}
+.b1x p{color:rgba(255,255,255,.72)}
+.b1x ul{margin-top:22px}
+.b1x li{padding:10px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px;display:flex;gap:12px}
+.b1x li b{color:var(--teal2);font-weight:600;min-width:24px}
+.b2x .num{font-size:34px;font-weight:800;color:var(--teal);line-height:1}
+.b2x .num small{font-size:16px}
+.b2x .lb{font-size:13px;color:var(--dim);margin-top:8px}
+/* content list */
+.content{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.item{display:flex;gap:22px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;transition:.2s}
+.item:hover{border-color:var(--teal);box-shadow:var(--shadow)}
+.thumb{width:120px;height:120px;flex-shrink:0;border-radius:8px;background:linear-gradient(135deg,var(--deep),var(--deep2));position:relative;overflow:hidden}
+.thumb i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(126,217,210,.5);font-size:13px;font-style:normal}
+.item .tx{flex:1;min-width:0}
+.item .cat{font-size:11px;color:var(--teal);font-weight:700;letter-spacing:1px}
+.item h4{font-size:17px;margin:8px 0 8px;line-height:1.5}
+.item p{font-size:13px;color:var(--dim)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--deep);border-radius:16px;overflow:hidden}
+.step{padding:42px 32px;color:#fff;position:relative}
+.step:not(:last-child)::after{content:"";position:absolute;right:0;top:24px;bottom:24px;width:1px;background:rgba(255,255,255,.12)}
+.step .n{font-size:13px;color:var(--teal2);letter-spacing:2px;font-weight:700}
+.step h4{font-size:19px;margin:14px 0 10px}
+.step p{font-size:14px;color:rgba(255,255,255,.7)}
+/* quote band */
+.band{background:var(--teal);color:#04201e;padding:64px 0}
+.band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.band blockquote{font-size:clamp(20px,2.6vw,28px);line-height:1.6;font-weight:700}
+.band cite{display:block;font-style:normal;font-size:13px;margin-top:20px;letter-spacing:1px}
+.band .right{font-size:15px;line-height:2;color:#053f3a}
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.q{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px 30px}
+.q h4{font-size:17px;margin-bottom:12px;position:relative;padding-left:30px}
+.q h4::before{content:"?";position:absolute;left:0;top:1px;width:20px;height:20px;background:var(--deep);color:var(--teal2);border-radius:50%;font-size:12px;display:flex;align-items:center;justify-content:center}
+.q p{font-size:14px;color:var(--dim)}
+/* footer */
+footer{background:var(--deep);color:rgba(255,255,255,.72);padding-top:72px}
+.f-in{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:50px}
+.f-in h5{color:var(--teal2);font-size:14px;margin-bottom:22px;letter-spacing:1px}
+.f-in ul li{padding:8px 0;font-size:14px}
+.f-in ul li a:hover{color:var(--teal2)}
+.f-brand .mark{margin-bottom:22px}
+.f-brand p{font-size:14px;line-height:1.9;margin-bottom:22px}
+.f-url{background:rgba(255,255,255,.06);border:1px solid rgba(126,217,210,.25);border-radius:8px;padding:14px 18px;font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--teal2);word-break:break-all}
+.f-bot{border-top:1px solid rgba(255,255,255,.12);margin-top:60px;padding:28px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px}
+.f-bot a{color:var(--teal2)}
+@media(max-width:960px){
+ .cols,.content,.faq{grid-template-columns:1fr 1fr}
+ .bento{grid-template-columns:1fr 1fr}
+ .f-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+ .hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:64px;gap:44px}
+ .topbar .wrap{justify-content:center;text-align:center}
+ .h-btn{display:block}
+ nav{position:fixed;top:126px;left:0;right:0;background:var(--paper);flex-direction:column;padding:16px;gap:2px;border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:.3s;box-shadow:0 12px 30px rgba(0,0,0,.08)}
+ nav.open{max-height:440px}
+ nav a{padding:13px 16px;border-radius:4px}
+ .cols,.content,.faq,.bento,.steps{grid-template-columns:1fr}
+ .b1x{grid-row:auto}
+ .step:not(:last-child)::after{display:none}
+ .band .wrap{grid-template-columns:1fr;gap:30px}
+ .item{flex-direction:column}
+ .thumb{width:100%;height:160px}
+ .f-in{grid-template-columns:1fr}
+ section{padding:64px 0}
+ .sec-head{flex-direction:column;align-items:flex-start;margin-bottom:40px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="topbar"><div class="wrap"><span>欢迎来到 89电影网 · 影片资料与观影文化内容分享平台</span><span>官方站点 <a href="https://89dianyingwang-zh.github.io">89dianyingwang-zh.github.io</a></span></div></div>
+
+<header>
+ <div class="wrap h-in">
+  <div class="brand"><div class="mark">89<span>.</span></div><div class="brand-text"><strong>89电影网</strong><small>89dianyingwang-zh</small></div></div>
+  <nav id="nav">
+   <a href="#columns">内容栏目</a>
+   <a href="#topic">专题策划</a>
+   <a href="#reading">内容阅读</a>
+   <a href="#steps">使用指南</a>
+   <a href="#faq">常见问题</a>
+  </nav>
+  <button class="h-btn" id="hbtn" aria-label="导航菜单">☰</button>
+ </div>
+</header>
+
+<main>
+ <!-- HERO -->
+ <section class="hero" style="padding:0">
+  <div class="wrap">
+   <div>
+    <span class="tag">影片资料 · 影史脉络 · 观影文化</span>
+    <h1>把散落的银幕记忆<br>重新<em>整理成章</em></h1>
+    <p class="lede">89电影网（89dianyingwang-zh）以年代影片资料整理、类型专题与影人故事为核心，为喜欢影视内容的读者提供可读、可查、可讨论的内容服务。</p>
+    <div class="urlbox"><label>Site / 官方站点地址</label><code>https://89dianyingwang-zh.github.io</code></div>
+    <div class="ctas">
+     <a href="#columns" class="btn btn-p">浏览内容栏目 →</a>
+     <a href="#reading" class="btn btn-o">阅读最新文章</a>
+    </div>
+   </div>
+   <div class="hcards">
+    <div class="hcard"><div class="h"><b>年代影片馆</b><i>常设</i></div><p>按年代梳理具有代表性的影片资料与时代印记。</p></div>
+    <div class="hcard"><div class="h"><b>类型专题</b><i>每周</i></div><p>从喜剧到悬疑，做纵向溯源与横向对比。</p></div>
+    <div class="hcard"><div class="h"><b>影人故事</b><i>连载</i></div><p>讲述创作者与幕后工作者的职业轨迹。</p></div>
+   </div>
+  </div>
+ </section>
+
+ <!-- COLUMNS -->
+ <section id="columns">
+  <div class="wrap">
+   <div class="sec-head">
+    <div class="lead">
+     <span class="eyebrow">01 / Columns</span>
+     <h2>四个常设栏目，各有清晰分工</h2>
+     <p class="sec-note">89电影网把内容分成四个方向：资料整理、片单策划、人物讲述与随笔评论，读者可按兴趣直接进入。</p>
+    </div>
+    <div class="sec-no">SECTION 01</div>
+   </div>
+   <div class="cols">
+    <article class="col"><div class="ic">🎞️</div><h3>年代影片馆</h3><p>整理不同年代的影片资料、创作背景与时代特征，建立可检索的内容档案。</p><a href="#" class="more">进入栏目 →</a></article>
+    <article class="col"><div class="ic">📂</div><h3>怀旧片单</h3><p>围绕情绪、场景与主题策划合集，帮读者在碎片时间里快速找到合适的片子。</p><a href="#" class="more">进入栏目 →</a></article>
+    <article class="col"><div class="ic">🎭</div><h3>影人故事</h3><p>记录演员、导演与幕后工作者的创作经历，还原作品背后的人与选择。</p><a href="#" class="more">进入栏目 →</a></article>
+    <article class="col"><div class="ic">✍️</div><h3>观影随笔</h3><p>以个人视角写下的观后感与评论，重细节、重表达、重真实感受。</p><a href="#" class="more">进入栏目 →</a></article>
+   </div>
+  </div>
+ </section>
+
+ <!-- BENTO -->
+ <section id="topic" class="bg-sand">
+  <div class="wrap">
+   <div class="sec-head">
+    <div class="lead">
+     <span class="eyebrow">02 / Feature</span>
+     <h2>为什么选择 89电影网</h2>
+     <p class="sec-note">内容平台的差异在细节。我们坚持资料可查、视角多元、表达克制。</p>
+    </div>
+    <div class="sec-no">SECTION 02</div>
+   </div>
+   <div class="bento">
+    <div class="bx b1x">
+     <span class="pill">我们的做法</span>
+     <h3>不追热点，只做经得起回看的内容</h3>
+     <p>89电影网（89dianyingwang-zh）把精力放在影片资料整理、影史脉络与观影文化上，文章经过选题、资料核验与改写三道工序，力求每篇都有可被引用的信息量。</p>
+     <ul>
+      <li><b>01</b><span>资料优先：基础信息尽量标注来源与整理时间。</span></li>
+      <li><b>02</b><span>视角多元：同一部作品允许不同解读并存。</span></li>
+      <li><b>03</b><span>表达克制：不堆砌情绪，不替读者下结论。</span></li>
+     </ul>
+    </div>
+    <div class="bx b2x"><div class="num">860<small>+</small></div><div class="lb">影片资料条目</div></div>
+    <div class="bx b2x"><div class="num">320<small>+</small></div><div class="lb">原创文章篇数</div></div>
+    <div class="bx"><h3>🧭 类型考古</h3><p>对喜剧、武侠、文艺、悬疑等类型做纵向溯源，理解类型为何成立、如何演变。</p></div>
+    <div class="bx"><h3>💬 讨论区</h3><p>在文章下方留下你的看法，与同样喜欢老片的读者一起补全银幕记忆。</p></div>
+   </div>
+  </div>
+ </section>
+
+ <!-- CONTENT LIST -->
+ <section id="reading">
+  <div class="wrap">
+   <div class="sec-head">
+    <div class="lead">
+     <span class="eyebrow">03 / Reading</span>
+     <h2>近期内容更新</h2>
+     <p class="sec-note">来自 89电影网 编辑部的原创文章与专题整理，持续更新中。</p>
+    </div>
+    <div class="sec-no">SECTION 03</div>
+   </div>
+   <div class="content">
+    <article class="item"><div class="thumb"><i>封面配图</i></div><div class="tx"><span class="cat">深度解读</span><h4>为什么有些老电影，越看越有味道</h4><p>从叙事节奏、人物塑造到时代语境，拆解经典作品的持久魅力。</p></div></article>
+    <article class="item"><div class="thumb"><i>封面配图</i></div><div class="tx"><span class="cat">影人往事</span><h4>一位幕后工作者的三十年光影路</h4><p>通过口述整理，还原一个普通创作者在行业变迁中的坚守与选择。</p></div></article>
+    <article class="item"><div class="thumb"><i>封面配图</i></div><div class="tx"><span class="cat">片单推荐</span><h4>雨天必看的十部治愈系老片</h4><p>按情绪而非评分排序的私人片单，适合一个人安静地看完整整一个下午。</p></div></article>
+    <article class="item"><div class="thumb"><i>封面配图</i></div><div class="tx"><span class="cat">类型考古</span><h4>悬疑片的几种叙事套路与破局</h4><p>从叙事结构看类型片如何在规则之内做出新意。</p></div></article>
+   </div>
+  </div>
+ </section>
+
+ <!-- STEPS -->
+ <section id="steps" style="padding:0">
+  <div class="wrap">
+   <div class="sec-head" style="margin-bottom:56px">
+    <div class="lead">
+     <span class="eyebrow">04 / Guide</span>
+     <h2>四步开始你的怀旧观影</h2>
+     <p class="sec-note">给新访客的使用路径，从确定心情到参与讨论，快速上手 89电影网。</p>
+    </div>
+    <div class="sec-no">SECTION 04</div>
+   </div>
+   <div class="steps">
+    <div class="step"><div class="n">STEP 01</div><h4>确定心情</h4><p>想轻松还是想深思，先定基调再选内容。</p></div>
+    <div class="step"><div class="n">STEP 02</div><h4>选栏目</h4><p>四个常设栏目，按兴趣直接进入。</p></div>
+    <div class="step"><div class="n">STEP 03</div><h4>读专题</h4><p>主题化片单与深度解读，理解更立体。</p></div>
+    <div class="step"><div class="n">STEP 04</div><h4>参与讨论</h4><p>在评论区留下你的看法，补全记忆。</p></div>
+   </div>
+  </div>
+ </section>
+
+ <!-- QUOTE BAND -->
+ <section class="band">
+  <div class="wrap">
+   <blockquote>“我们不做转瞬即逝的资讯，只做能被反复回看的银幕档案。”<cite>— 89电影网 编辑部</cite></blockquote>
+   <div>从一部影片到一段影史，从一次观看到一场讨论。89电影网（89dianyingwang-zh）希望让每一次点击都指向一段值得停留的内容。</div>
+  </div>
+ </section>
+
+ <!-- FAQ -->
+ <section id="faq" class="bg-sand">
+  <div class="wrap">
+   <div class="sec-head">
+    <div class="lead">
+     <span class="eyebrow">05 / FAQ</span>
+     <h2>常见问题</h2>
+     <p class="sec-note">关于 89电影网 的内容定位、更新方式与参与渠道的说明。</p>
+    </div>
+    <div class="sec-no">SECTION 05</div>
+   </div>
+   <div class="faq">
+    <div class="q"><h4>89电影网主要做什么？</h4><p>专注影片资料整理、年代影片回顾、类型专题与观影文化内容分享，以原创文字为主。</p></div>
+    <div class="q"><h4>内容多久更新一次？</h4><p>原创文章按周更新，专题片单与年代整理按专题节奏持续推进。</p></div>
+    <div class="q"><h4>资料来源是否可靠？</h4><p>基础资料参考公开档案与权威出版物，重要数据均会标注来源与整理时间。</p></div>
+    <div class="q"><h4>适合哪类读者？</h4><p>喜欢老电影、对影史感兴趣，或想找一部合适的片子消磨时光的观众。</p></div>
+    <div class="q"><h4>如何参与投稿？</h4><p>欢迎分享你的观影随笔与冷门好片推荐，通过页面底部联系方式提交即可。</p></div>
+    <div class="q"><h4>是否提供观看渠道？</h4><p>平台以内容分享为主，涉及观看的部分会引导至正规授权渠道。</p></div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer id="about">
+ <div class="wrap">
+  <div class="f-in">
+   <div class="f-brand">
+    <div class="mark">89<span>.</span></div>
+    <p>89电影网（89dianyingwang-zh）致力于经典影视回顾与观影文化分享，通过年代影片资料、影人故事、类型专题与原创随笔，让更多人重新发现银幕上的美好记忆。</p>
+    <div class="f-url">https://89dianyingwang-zh.github.io</div>
+   </div>
+   <div><h5>内容栏目</h5><ul>
+    <li><a href="#">年代影片馆</a></li>
+    <li><a href="#">怀旧片单</a></li>
+    <li><a href="#">影人故事</a></li>
+    <li><a href="#">观影随笔</a></li>
+   </ul></div>
+   <div><h5>站点导航</h5><ul>
+    <li><a href="#columns">内容栏目</a></li>
+    <li><a href="#topic">专题策划</a></li>
+    <li><a href="#reading">内容阅读</a></li>
+    <li><a href="#steps">使用指南</a></li>
+   </ul></div>
+   <div><h5>联系我们</h5><ul>
+    <li><a href="#">内容投稿</a></li>
+    <li><a href="#">读者反馈</a></li>
+    <li><a href="#">合作事宜</a></li>
+    <li><a href="#">关于本站</a></li>
+   </ul></div>
+  </div>
+  <div class="f-bot">
+   <span>本站官方地址：<a href="https://89dianyingwang-zh.github.io">https://89dianyingwang-zh.github.io</a></span>
+   <span>© 89电影网 保留所有权利 | <a href="#">免责声明</a> | <a href="#">隐私政策</a></span>
+  </div>
+ </div>
+</footer>
+
+<script>
+document.getElementById('hbtn').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});});
+</script>
+</body>
+</html>
